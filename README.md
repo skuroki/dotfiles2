@@ -5,3 +5,4 @@ curl -fsSL -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/skurok
 ```
 
 * XCodeは手で入れる。
+  * licence agreeも手でやる。
