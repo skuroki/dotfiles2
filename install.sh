@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-echo 'hello'
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
