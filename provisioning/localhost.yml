@@ -9,57 +9,56 @@
       - homebrew/dupes
       - caskroom/cask
     homebrew_packages:
-      homebrew_packages:
-        - { name: ansible }
-        - { name: autoconf }
-        - { name: automake }
-        - { name: coreutils }
-        - { name: curl }
-        - { name: gdbm }
-        - { name: git }
-        - { name: libyaml }
-        - { name: mariadb }
-        - { name: mongodb }
-        - { name: mybatis-migrations }
-        - { name: mysql }
-        - { name: mysql-connector-java }
-        - { name: openssl }
-        - { name: openssl, state: linked, install_options: force }
-        - { name: pcre }
-        - { name: peco }
-        - { name: phantomjs }
-        - { name: pkg-config }
-        - { name: python }
-        - { name: rbenv }
-        - { name: readline }
-        - { name: redis }
-        - { name: ruby-build }
-        - { name: screen }
-        - { name: sqlite }
-        - { name: ssh-copy-id }
-        - { name: subversion }
-        - { name: the_silver_searcher }
-        - { name: tree }
-        - { name: vim }
-        - { name: watch }
-        - { name: wget }
-        - { name: zsh }
-        - { name: jq }
-      homebrew_cask_packages:
-        - { name: adobe-reader }
-        - { name: firefox }
-        - { name: google-chrome }
-        - { name: google-japanese-ime }
-        - { name: iterm2 }
-        - { name: java }
-        - { name: kobito }
-        - { name: limechat }
-        - { name: skitch }
-        - { name: skype }
-        - { name: slack }
-        - { name: sourcetree }
-        - { name: vagrant }
-        - { name: virtualbox }
+      - { name: ansible }
+      - { name: autoconf }
+      - { name: automake }
+      - { name: coreutils }
+      - { name: curl }
+      - { name: gdbm }
+      - { name: git }
+      - { name: libyaml }
+      - { name: mariadb }
+      - { name: mongodb }
+      - { name: mybatis-migrations }
+      - { name: mysql }
+      - { name: mysql-connector-java }
+      - { name: openssl }
+      - { name: openssl, state: linked, install_options: force }
+      - { name: pcre }
+      - { name: peco }
+      - { name: phantomjs }
+      - { name: pkg-config }
+      - { name: python }
+      - { name: rbenv }
+      - { name: readline }
+      - { name: redis }
+      - { name: ruby-build }
+      - { name: screen }
+      - { name: sqlite }
+      - { name: ssh-copy-id }
+      - { name: subversion }
+      - { name: the_silver_searcher }
+      - { name: tree }
+      - { name: vim }
+      - { name: watch }
+      - { name: wget }
+      - { name: zsh }
+      - { name: jq }
+    homebrew_cask_packages:
+      - { name: adobe-reader }
+      - { name: firefox }
+      - { name: google-chrome }
+      - { name: google-japanese-ime }
+      - { name: iterm2 }
+      - { name: java }
+      - { name: kobito }
+      - { name: limechat }
+      - { name: skitch }
+      - { name: skype }
+      - { name: slack }
+      - { name: sourcetree }
+      - { name: vagrant }
+      - { name: virtualbox }
   tasks:
     - name: homebrew の tap リポジトリを追加
       homebrew_tap: tap={{ item }} state=present
