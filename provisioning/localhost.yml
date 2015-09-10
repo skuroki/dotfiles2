@@ -19,9 +19,9 @@
       - { name: libyaml }
       - { name: mariadb }
       - { name: mongodb }
-      - { name: mybatis-migrations }
-      - { name: mysql }
-      - { name: mysql-connector-java }
+      # - { name: mybatis-migrations }
+      # - { name: mysql }
+      # - { name: mysql-connector-java }
       - { name: openssl }
       - { name: openssl, state: linked, install_options: force }
       - { name: pcre }
