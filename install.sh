@@ -18,3 +18,8 @@ source ~/.bash_profile
 
 cd dotfiles2/provisioning
 ansible-playbook -i hosts -vv localhost.yml
+
+cd $HOME
+git clone https://github.com/skuroki/dotfiles.git
+cd dotfiles
+bash -x ./install.sh
