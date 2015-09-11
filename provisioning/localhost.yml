@@ -49,6 +49,7 @@
       - { name: firefox }
       - { name: google-chrome }
       - { name: google-japanese-ime }
+      - { name: hyperswitch }
       - { name: iterm2 }
       - { name: java }
       - { name: kobito }
