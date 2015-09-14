@@ -11,7 +11,7 @@ brew install python
 brew install ansible
 brew install git
 
-git clone https://github.com/skuroki/dotfiles2.git
+git clone git@github.com:skuroki/dotfiles2.git
 
 echo 'export HOMEBREW_CASK_OPTS="--appdir=/Applications"' >> ~/.bash_profile
 source ~/.bash_profile
