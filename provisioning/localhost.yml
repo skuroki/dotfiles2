@@ -33,7 +33,7 @@
       - { name: readline }
       - { name: redis }
       - { name: ruby-build }
-      - { name: screen, state: head }
+      - { name: homebrew/dupes/screen }
       - { name: sqlite }
       - { name: ssh-copy-id }
       - { name: subversion }
