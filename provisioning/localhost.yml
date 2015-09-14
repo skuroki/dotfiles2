@@ -104,3 +104,6 @@
       shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
       args:
         creates: ~/.oh-my-zsh/
+
+    - name: XCode Command Line Tools のインストール
+      shell: xcode-select --install
