@@ -21,6 +21,6 @@ ansible-playbook -i hosts -vv localhost.yml
 
 cd $HOME
 rm -rf dotfiles
-git clone https://github.com/skuroki/dotfiles.git
+git clone git@github.com:skuroki/dotfiles.git
 cd dotfiles
 bash -x ./install.sh
