@@ -44,6 +44,7 @@
       - { name: wget }
       - { name: zsh }
       - { name: jq }
+      - { name: npm }
     homebrew_cask_packages:
       - { name: adobe-reader }
       - { name: firefox }
