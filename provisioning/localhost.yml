@@ -46,6 +46,7 @@
       - { name: jq }
       - { name: npm }
       - { name: htop }
+      - { name: packer }
     homebrew_cask_packages:
       - { name: adobe-reader }
       - { name: firefox }
