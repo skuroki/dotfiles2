@@ -63,6 +63,7 @@
       - { name: sourcetree }
       - { name: vagrant }
       - { name: virtualbox }
+      - { name: xquartz }
   tasks:
     - name: homebrew の tap リポジトリを追加
       homebrew_tap: tap={{ item }} state=present
