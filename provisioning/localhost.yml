@@ -5,7 +5,7 @@
   sudo: no
   vars:
     homebrew_taps:
-      - homebrew/homerew-binary
+      - homebrew/homebrew-binary
       - homebrew/homebrew-dupes
       - caskroom/homebrew-cask
     homebrew_packages:
