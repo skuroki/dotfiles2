@@ -5,9 +5,9 @@
   sudo: no
   vars:
     homebrew_taps:
-      - homebrew/binary
-      - homebrew/dupes
-      - caskroom/cask
+      - homebrew/homerew-binary
+      - homebrew/homebrew-dupes
+      - caskroom/homebrew-cask
     homebrew_packages:
       - { name: ansible }
       - { name: autoconf }
