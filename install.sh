@@ -17,7 +17,7 @@ echo 'export HOMEBREW_CASK_OPTS="--appdir=/Applications"' >> ~/.bash_profile
 source ~/.bash_profile
 
 cd dotfiles2/provisioning
-ansible-playbook -i hosts -vv localhost.yml
+ansible-playbook -i hosts -vv localhost.yml -K
 
 cd $HOME
 rm -rf dotfiles
