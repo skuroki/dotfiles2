@@ -9,6 +9,8 @@ curl -fsSL https://raw.githubusercontent.com/skuroki/dotfiles2/master/install.sh
 
 ## 自動化していないこと
 
-* capsキーをctrlキーにする
-* 入力ソースをgoogle imeに切り替える
+* 設定画面からやるシリーズ
+  * capsキーをctrlキーにする
+  * 入力ソースをgoogle imeに切り替える
+  * マウスのスクロールをナチュラルじゃなくする
 * dockの整理
