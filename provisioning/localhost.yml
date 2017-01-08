@@ -30,7 +30,7 @@
       - { name: readline }
       - { name: redis }
       - { name: ruby-build }
-      - { name: homebrew/dupes/screen }
+      - { name: screen }
       - { name: sqlite }
       - { name: ssh-copy-id }
       - { name: subversion }
