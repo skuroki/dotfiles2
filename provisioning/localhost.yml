@@ -31,7 +31,7 @@
       - { name: redis }
       - { name: ruby-build }
       - { name: screen }
-      - { name: sqlite }
+      - { name: sqlite, install_options: force }
       - { name: ssh-copy-id }
       - { name: subversion }
       - { name: the_silver_searcher }
