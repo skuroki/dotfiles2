@@ -16,6 +16,7 @@
       - { name: curl }
       - { name: gdbm }
       - { name: git }
+      - { name: heroku }
       - { name: libyaml }
       - { name: mariadb }
       - { name: mongodb }
