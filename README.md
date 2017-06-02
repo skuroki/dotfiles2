@@ -11,7 +11,8 @@ curl -fsSL https://raw.githubusercontent.com/skuroki/dotfiles2/master/install.sh
 
 * 設定画面からやるシリーズ
   * capsキーをctrlキーにする
-  * 入力ソースをgoogle imeに切り替える
+    * キーボード＞修飾キーから
+  * 入力ソースをgoogle imeに切り替える
   * マウスのスクロールをナチュラルじゃなくする
   * HyperSwitchの設定
     * バックグラウンド実行にする
