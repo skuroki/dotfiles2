@@ -13,7 +13,6 @@ curl -fsSL https://raw.githubusercontent.com/skuroki/dotfiles2/master/install.sh
   * capsキーをctrlキーにする
     * キーボード＞修飾キーから
   * 入力ソースをgoogle imeに切り替える
-  * マウスのスクロールをナチュラルじゃなくする
   * HyperSwitchの設定
     * バックグラウンド実行にする
     * 切り替えキーをCommand+Tabにする
