@@ -53,6 +53,7 @@
       - { name: hyperswitch }
       - { name: iterm2 }
       - { name: java }
+      - { name: kindle }
       - { name: limechat }
       - { name: skitch }
       - { name: skype }
