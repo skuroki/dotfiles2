@@ -47,6 +47,7 @@
       - { name: packer }
     homebrew_cask_packages:
       - { name: adobe-reader }
+      - { name: docker }
       - { name: firefox }
       - { name: google-chrome }
       - { name: google-japanese-ime }
