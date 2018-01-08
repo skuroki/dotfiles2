@@ -17,6 +17,7 @@
       - { name: gdbm }
       - { name: git }
       - { name: heroku }
+      - { name: kubectl }
       - { name: libyaml }
       - { name: mariadb }
       - { name: mongodb }
