@@ -7,9 +7,9 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 brew update
 
-brew install python
-brew install ansible
-brew install git
+brew install python || brew upgrade python
+brew install ansible || brew upgrade ansible
+brew install git || brew upgrade git
 
 git clone git@github.com:skuroki/dotfiles2.git
 
