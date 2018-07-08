@@ -4,10 +4,12 @@
   gather_facts: no
   become: no
   vars:
-    homebrew_taps:
-      - homebrew/binary
-      - homebrew/dupes
-      - caskroom/cask
+    homebrew_taps: []
+    # FIXME: ansible 2.7でもとに戻す
+    # homebrew_taps:
+    #   - homebrew/binary
+    #   - homebrew/dupes
+    #   - caskroom/cask
     homebrew_packages:
       - { name: ansible }
       - { name: autoconf }
