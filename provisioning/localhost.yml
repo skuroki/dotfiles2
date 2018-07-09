@@ -23,6 +23,7 @@
       - { name: libyaml }
       - { name: mariadb }
       - { name: mongodb }
+      - { name: mosh }
       - { name: nvim }
       - { name: openssl }
       - { name: openssl, state: linked, install_options: force }
