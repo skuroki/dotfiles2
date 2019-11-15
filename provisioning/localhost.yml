@@ -32,10 +32,12 @@
       - { name: phantomjs }
       - { name: pkg-config }
       - { name: python }
-      - { name: rbenv }
+      # brewじゃなくて手動で入れる(dotfilesの内容をmac依存にしないため)
+      # - { name: rbenv }
       - { name: readline }
       - { name: redis }
-      - { name: ruby-build }
+      # brewじゃなくて手動で入れる(dotfilesの内容をmac依存にしないため)
+      # - { name: ruby-build }
       - { name: screen }
       - { name: sqlite, install_options: force }
       - { name: ssh-copy-id }
