@@ -5,9 +5,7 @@
   become: no
   vars:
     homebrew_taps:
-      - homebrew/binary
-      - homebrew/dupes
-      - caskroom/cask
+      - homebrew/cask
     homebrew_packages:
       - { name: ansible }
       - { name: autoconf }
