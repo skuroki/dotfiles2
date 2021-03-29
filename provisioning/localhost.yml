@@ -18,18 +18,15 @@
       - { name: curl }
       - { name: gdbm }
       - { name: git }
-      - { name: heroku }
       - { name: kubectl }
       - { name: libyaml }
       - { name: mariadb }
-      - { name: mongodb }
       - { name: mosh }
       - { name: nvim }
       - { name: openssl }
       - { name: openssl, state: linked, install_options: force }
       - { name: pcre }
       - { name: peco }
-      - { name: phantomjs }
       - { name: pkg-config }
       - { name: python }
       # brewじゃなくて手動で入れる(dotfilesの内容をmac依存にしないため)
