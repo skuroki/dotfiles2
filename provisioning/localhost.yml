@@ -46,20 +46,17 @@
       - { name: htop }
       - { name: packer }
     homebrew_cask_packages:
-      - { name: adobe-reader }
       - { name: docker }
       - { name: firefox }
-      - { name: google-chrome }
+      # - { name: google-chrome }
       - { name: google-cloud-sdk }
       - { name: google-japanese-ime }
       - { name: hyperswitch }
       - { name: iterm2 }
-      - { name: java }
       - { name: kindle }
-      - { name: limechat }
       - { name: skitch }
       - { name: skype }
-      - { name: slack }
+      # - { name: slack }
       - { name: sourcetree }
       - { name: vagrant }
       - { name: virtualbox }
