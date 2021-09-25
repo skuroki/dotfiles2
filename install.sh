@@ -25,4 +25,3 @@ rm -rf dotfiles
 git clone git@github.com:skuroki/dotfiles.git
 cd dotfiles
 bash -x ./install.sh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
