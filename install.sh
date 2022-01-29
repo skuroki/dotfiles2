@@ -6,6 +6,9 @@ rm -rf dotfiles2
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 xcode-select --install
 
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/shinsukekuroki/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 brew update
 
 brew install python || brew upgrade python
