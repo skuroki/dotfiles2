@@ -10,6 +10,7 @@
       - { name: ansible }
       - { name: autoconf }
       - { name: automake }
+      - { name: byobu }
       - { name: coreutils }
       - { name: curl }
       - { name: gdbm }
