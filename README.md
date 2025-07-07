@@ -1,7 +1,25 @@
 # dotfiles2
 
+## Brewfileを使用した新しいセットアップ（推奨）
+
+```bash
+# Brewfileを使用したセットアップ
+curl -fsSL https://raw.githubusercontent.com/skuroki/dotfiles2/master/install_with_brewfile.sh | bash -x
 ```
+
+## 従来のAnsibleベースのセットアップ
+
+```bash
 curl -fsSL https://raw.githubusercontent.com/skuroki/dotfiles2/master/install.sh | bash -x
+```
+
+## Brewfileの使用方法
+
+このリポジトリをクローンした後、以下のコマンドでパッケージをインストールできます：
+
+```bash
+cd dotfiles2
+brew bundle
 ```
 
 * Githubへの公開鍵置くのも一旦は手動
