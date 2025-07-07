@@ -1,0 +1,192 @@
+{
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [",", "b"],
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.sendSequence",
+                    "args": {
+                        "text": "git blame ${file}\u000D"
+                    }
+                }
+            ]
+        },
+        {
+            "before": [",", "h"],
+            "commands": ["github.copilot.chat"]
+        },
+        {
+            "before": [",", "j"],
+            "commands": ["editor.action.goToDeclaration"]
+        },
+        {
+            "before": [",", "l"],
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.sendSequence",
+                    "args": {
+                        "text": "git log ${file}\u000D"
+                    }
+                }
+            ]
+        },
+        {
+            "before": [",", "L"],
+            "commands": [
+                "workbench.action.files.save",
+                {
+                    "command": "workbench.action.terminal.sendSequence",
+                    "args": {
+                        "text": "bundle exec rubocop\u000D"
+                    }
+                }
+            ]
+        },
+        {
+            "before": [",", "n"],
+            "commands": ["workbench.action.nextEditorInGroup"]
+        },
+        {
+            "before": [",", "p"],
+            "commands": ["workbench.action.previousEditorInGroup"]
+        },
+        {
+            "before": [",", "s"],
+            "commands": [
+                "workbench.action.files.save",
+                {
+                    "command": "workbench.action.terminal.sendSequence",
+                    "args": {
+                        "text": "bundle exec rspec ${file}:${lineNumber}\u000D"
+                    }
+                }
+            ]
+        },
+        {
+            "before": [",", "S"],
+            "commands": [
+                "workbench.action.files.save",
+                {
+                    "command": "workbench.action.terminal.sendSequence",
+                    "args": {
+                        "text": "bundle exec rspec ${file}\u000D"
+                    }
+                }
+            ]
+        },
+        {
+            "before": [",", "t"],
+            "commands": [
+                "workbench.action.terminal.focus"
+            ]
+        },
+        {
+            "before": [",", "y"],
+            "commands": [
+                "workbench.action.files.save",
+                {
+                    "command": "workbench.action.terminal.sendSequence",
+                    "args": {
+                        "text": "~/dotfiles/files/gitwhy ${file} ${lineNumber}\u000D"
+                    }
+                }
+            ]
+        },
+        {
+            "before": [",", ","],
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.sendSequence",
+                    "args": {
+                        "text": "an "
+                    }
+                },
+                "workbench.action.terminal.focus"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [",", "a"],
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.sendSequence",
+                    "args": {
+                        "text": "an '${selectedText}'\u000D"
+                    }
+                }
+            ]
+        }
+    ],
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "rubyLsp.rubyVersionManager": {
+        "name": "rbenv"
+    },
+    "rubyLsp.linters": ["rubocop"],
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "editor.formatOnSave": false,
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[graphql]": {
+        "editor.formatOnSave": true
+    },
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": true
+    },
+    "[json]": {
+        "editor.formatOnSave": true
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+        "editor.formatOnSave": true
+    },
+    "[css]": {
+        "editor.formatOnSave": true
+    },
+    "[ruby]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "editor.cursorStyle": "line",
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "liveshare.presence": false,
+    "files.insertFinalNewline": true,
+    "window.zoomLevel": -1,
+    "vim.statusBarColorControl": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f",
+        "statusBar.foreground": "#ffffff",
+        "statusBar.debuggingForeground": "#ffffff"
+    },
+    "git.autofetch": true,
+    "chat.agent.enabled": true,
+    "github.copilot.chat.agent.thinkingTool": true,
+    "redhat.telemetry.enabled": false,
+    "rubyTestExplorer.testFramework": "rspec",
+    "git.openRepositoryInParentFolders": "never",
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "github.copilot.chat.codesearch.enabled": true,
+    "accessibility.signals.chatResponseReceived": {
+        "sound": "on"
+    },
+    "docker.extension.dockerEngineAvailabilityPrompt": false,
+    "vim.useSystemClipboard": true,
+    "editor.experimentalEditContextEnabled": false,
+    "accessibility.voice.speechLanguage": "ja-JP"
+}

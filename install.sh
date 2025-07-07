@@ -28,3 +28,8 @@ rm -rf dotfiles
 git clone git@github.com:skuroki/dotfiles.git
 cd dotfiles
 bash -x ./install.sh
+
+# VS Code設定とエクスションのセットアップ
+echo "🔧 VS Codeの設定を適用しています..."
+cd $HOME/dotfiles2/vscode
+./setup_vscode.sh

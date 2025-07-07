@@ -1,0 +1,29 @@
+# VS Code拡張機能リスト
+# 生成日時: #午後
+
+# インストール済み拡張機能:
+bierner.markdown-mermaid
+bpruitt-goddard.mermaid-markdown-syntax-highlighting
+dbaeumer.vscode-eslint
+esbenp.prettier-vscode
+evilz.vscode-reveal
+github.vscode-github-actions
+hashicorp.terraform
+ms-azuretools.vscode-containers
+ms-azuretools.vscode-docker
+ms-ceintl.vscode-language-pack-ja
+ms-vscode-remote.remote-containers
+ms-vsliveshare.vsliveshare
+redhat.java
+rioj7.command-variable
+sporto.rails-go-to-spec
+techer.open-in-browser
+visualstudioexptteam.intellicode-api-usage-examples
+visualstudioexptteam.vscodeintellicode
+vscjava.vscode-gradle
+vscjava.vscode-java-debug
+vscjava.vscode-java-dependency
+vscjava.vscode-java-pack
+vscjava.vscode-java-test
+vscjava.vscode-maven
+vscodevim.vim
