@@ -86,11 +86,6 @@ brew bundle
 echo 'export HOMEBREW_CASK_OPTS="--appdir=/Applications"' >> ~/.bash_profile
 source ~/.bash_profile
 
-# Install oh-my-zsh
-if [ ! -d ~/.oh-my-zsh ]; then
-    curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-fi
-
 # Configure CapsLock key to Control key
 echo "Setting up CapsLock to Control key mapping..."
 hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x7000000E0}]}'
