@@ -35,7 +35,7 @@ if ! xcode-select -p &> /dev/null; then
 fi
 
 # Setup Homebrew environment
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/shinsukekuroki/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Update Homebrew
