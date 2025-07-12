@@ -144,14 +144,14 @@ killall cfprefsd 2>/dev/null
 echo "Google Japanese IME has been configured as the default input source."
 echo "Please log out and log back in to apply the input source changes."
 
+# VS Code設定とエクスションのセットアップ
+echo "🔧 VS Codeの設定を適用しています..."
+cd $HOME/dotfiles2/vscode
+./setup_vscode.sh
+
 # Setup dotfiles (legacy)
 cd $HOME
 rm -rf dotfiles
 git clone git@github.com:skuroki/dotfiles.git
 cd dotfiles
 bash -xe ./install.sh
-
-# VS Code設定とエクスションのセットアップ
-echo "🔧 VS Codeの設定を適用しています..."
-cd $HOME/dotfiles2/vscode
-./setup_vscode.sh
