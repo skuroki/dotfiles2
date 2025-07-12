@@ -51,6 +51,7 @@ if [ ! -f ~/.ssh/id_ed25519 ]; then
     # GitHub CLI authentication using browser (already logged in)
     echo "Authenticating with GitHub CLI using browser..."
     gh auth login --web --scopes write:public_key
+    gh auth refresh -h github.com -s user
     
     # Get GitHub email from authenticated user
     github_email=$(gh api user/emails --jq '.[] | select(.primary==true) | .email')
