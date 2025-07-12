@@ -34,6 +34,13 @@ if ! xcode-select -p &> /dev/null; then
     done
 fi
 
+# Install Rosetta 2 if on Apple Silicon Mac
+if [[ $(uname -m) == "arm64" ]]; then
+    echo "Installing Rosetta 2 for Apple Silicon Mac..."
+    sudo softwareupdate --install-rosetta --agree-to-license
+    echo "Rosetta 2 installation completed."
+fi
+
 # Setup Homebrew environment
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
