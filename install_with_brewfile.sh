@@ -55,10 +55,9 @@ brew install gh
 if [ ! -f ~/.ssh/id_ed25519 ]; then
     echo "Setting up SSH key for GitHub..."
     
-    # GitHub CLI authentication using browser (already logged in)
+    # GitHub CLI authentication using browser
     echo "Authenticating with GitHub CLI using browser..."
-    gh auth login --web --scopes write:public_key
-    gh auth refresh -h github.com -s user
+    gh auth login --web --scopes write:public_key,user:email
     
     # Get GitHub email from authenticated user
     github_email=$(gh api user/emails --jq '.[] | select(.primary==true) | .email')
