@@ -8,7 +8,11 @@ rm -rf dotfiles2
 
 # Install Homebrew if not already installed
 if ! command -v brew &> /dev/null; then
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    echo "Installing Homebrew..."
+    curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh > /tmp/homebrew_install.sh
+    /bin/bash /tmp/homebrew_install.sh
+    rm /tmp/homebrew_install.sh
+    echo "Homebrew installation completed."
 fi
 
 # Install Xcode command line tools
