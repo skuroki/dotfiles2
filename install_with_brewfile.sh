@@ -98,6 +98,28 @@ sudo launchctl load /Library/LaunchDaemons/com.local.KeyRemapping.plist
 
 echo "CapsLock key has been mapped to Control key!"
 
+# Configure Google Japanese IME as default input source
+echo "Setting up Google Japanese IME as default input source..."
+
+# Wait for Google Japanese IME to be fully installed
+sleep 5
+
+# Enable Google Japanese IME in input sources
+defaults write com.apple.HIToolbox AppleEnabledInputSources -array-add '{
+    "Bundle ID" = "com.google.inputmethod.Japanese";
+    "InputSourceKind" = "Keyboard Input Method";
+    "KeyboardLayout Name" = "com.google.inputmethod.Japanese";
+}'
+
+# Set Google Japanese IME as the current input source
+defaults write com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID "com.google.inputmethod.Japanese"
+
+# Clear preferences cache
+killall cfprefsd 2>/dev/null || true
+
+echo "Google Japanese IME has been configured as the default input source."
+echo "Please log out and log back in to apply the input source changes."
+
 # Setup dotfiles (legacy)
 cd $HOME
 rm -rf dotfiles
