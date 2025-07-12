@@ -12,7 +12,15 @@ if ! command -v brew &> /dev/null; then
 fi
 
 # Install Xcode command line tools
-xcode-select --install || true
+if ! xcode-select -p &> /dev/null; then
+    xcode-select --install
+    echo "Xcode command line tools installation started. Please wait for it to complete."
+    # Wait for installation to complete
+    until xcode-select -p &> /dev/null; do
+        sleep 30
+        echo "Waiting for Xcode command line tools installation to complete..."
+    done
+fi
 
 # Setup Homebrew environment
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/shinsukekuroki/.zprofile
@@ -49,7 +57,8 @@ if [ ! -f ~/.ssh/id_ed25519 ]; then
 fi
 
 # Test SSH connection
-ssh -T git@github.com || echo "SSH connection verified"
+echo "Testing SSH connection to GitHub..."
+ssh -T git@github.com
 
 # Clone the repository
 git clone git@github.com:skuroki/dotfiles2.git
@@ -115,7 +124,7 @@ defaults write com.apple.HIToolbox AppleEnabledInputSources -array-add '{
 defaults write com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID "com.google.inputmethod.Japanese"
 
 # Clear preferences cache
-killall cfprefsd 2>/dev/null || true
+killall cfprefsd 2>/dev/null
 
 echo "Google Japanese IME has been configured as the default input source."
 echo "Please log out and log back in to apply the input source changes."

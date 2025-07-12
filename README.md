@@ -4,7 +4,7 @@
 
 ```bash
 # Brewfileを使用したセットアップ
-curl -fsSL https://raw.githubusercontent.com/skuroki/dotfiles2/master/install_with_brewfile.sh | bash -x
+curl -fsSL https://raw.githubusercontent.com/skuroki/dotfiles2/master/install_with_brewfile.sh | bash -xe
 ```
 
 ## 従来のAnsibleベースのセットアップ
