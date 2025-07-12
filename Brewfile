@@ -5,7 +5,6 @@
 tap "homebrew/cask"
 
 # Formulae (brew packages)
-brew "ansible"
 brew "autoconf"
 brew "automake"
 brew "aws-iam-authenticator"
