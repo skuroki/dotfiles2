@@ -21,6 +21,36 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Update Homebrew
 brew update
 
+# Install GitHub CLI first
+brew install gh
+
+# Generate SSH key pair if not exists
+if [ ! -f ~/.ssh/id_ed25519 ]; then
+    echo "Setting up SSH key for GitHub..."
+    
+    # GitHub CLI authentication using browser (already logged in)
+    echo "Authenticating with GitHub CLI using browser..."
+    gh auth login --web --scopes write:public_key
+    
+    # Get GitHub email from authenticated user
+    github_email=$(gh api user/emails --jq '.[] | select(.primary==true) | .email')
+    echo "Using GitHub email: $github_email"
+    
+    ssh-keygen -t ed25519 -C "$github_email" -f ~/.ssh/id_ed25519 -N ""
+    
+    # Start ssh-agent and add key
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/id_ed25519
+    
+    # Add SSH key to GitHub account
+    gh ssh-key add ~/.ssh/id_ed25519.pub --title "$(hostname)-$(date +%Y%m%d)"
+    
+    echo "SSH key successfully added to GitHub!"
+fi
+
+# Test SSH connection
+ssh -T git@github.com || echo "SSH connection verified"
+
 # Clone the repository
 git clone git@github.com:skuroki/dotfiles2.git
 

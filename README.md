@@ -22,9 +22,6 @@ cd dotfiles2
 brew bundle
 ```
 
-* Githubへの公開鍵置くのも一旦は手動
-  * https://github.com/skuroki.keys からそのうちなんとかするかも
-
 ## 自動化していないこと
 
 * 設定画面からやるシリーズ
