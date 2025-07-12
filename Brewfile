@@ -57,6 +57,7 @@ brew "yq"
 brew "zsh"
 
 # Casks (GUI applications)
+cask "alt-tab"
 cask "chromedriver"
 cask "docker"
 cask "docker-desktop"
