@@ -3,6 +3,14 @@
 # Brewfile setup script
 # This replaces the Ansible-based package installation
 
+# Request sudo access upfront
+echo "This script requires sudo access for system configuration."
+echo "Please enter your password to continue:"
+sudo -v
+
+# Keep sudo alive in the background
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
 cd $HOME
 rm -rf dotfiles2
 
