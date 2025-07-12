@@ -69,10 +69,6 @@ if [ ! -f ~/.ssh/id_ed25519 ]; then
     echo "SSH key successfully added to GitHub!"
 fi
 
-# Test SSH connection
-echo "Testing SSH connection to GitHub..."
-ssh -T git@github.com
-
 # Clone the repository
 git clone git@github.com:skuroki/dotfiles2.git
 
