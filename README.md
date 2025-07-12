@@ -25,10 +25,12 @@ brew bundle
 ## 自動化していないこと
 
 * 設定画面からやるシリーズ
-  * capsキーをctrlキーにする
-    * キーボード＞修飾キーから
   * 入力ソースをgoogle imeに切り替える
   * HyperSwitchの設定
     * バックグラウンド実行にする
     * 切り替えキーをCommand+Tabにする
 * dockの整理
+
+## 自動化済みの項目
+
+* capsキーをctrlキーにする（hidutilによる永続化設定）

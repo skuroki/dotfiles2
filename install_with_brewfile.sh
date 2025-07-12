@@ -67,6 +67,37 @@ if [ ! -d ~/.oh-my-zsh ]; then
     curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 fi
 
+# Configure CapsLock key to Control key
+echo "Setting up CapsLock to Control key mapping..."
+hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x7000000E0}]}'
+
+# Create LaunchAgent for persistent key mapping
+sudo mkdir -p /Library/LaunchDaemons
+sudo tee /Library/LaunchDaemons/com.local.KeyRemapping.plist > /dev/null << EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.local.KeyRemapping</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/hidutil</string>
+        <string>property</string>
+        <string>--set</string>
+        <string>{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x7000000E0}]}</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+</dict>
+</plist>
+EOF
+
+# Load the LaunchAgent
+sudo launchctl load /Library/LaunchDaemons/com.local.KeyRemapping.plist
+
+echo "CapsLock key has been mapped to Control key!"
+
 # Setup dotfiles (legacy)
 cd $HOME
 rm -rf dotfiles
