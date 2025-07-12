@@ -1,9 +1,6 @@
 # Brewfile for dotfiles2
 # Run with: brew bundle
 
-# Taps
-tap "homebrew/cask"
-
 # Formulae (brew packages)
 brew "autoconf"
 brew "automake"
